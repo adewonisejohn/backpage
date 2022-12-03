@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>https://www.yesbackpage.com/signin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body{
+            background-color:white;
+        }
+        #center-div{
+            background-color:#eeeeff;
+            width:95vw;
+            height:60vh;
+            border-radius:2%;
+            position: relative;
+        }
+        .heading{
+            color:black;
+            font-weight:100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top:3%;
+        }
+        .labels{
+            float: left;
+            margin-left:20px;
+            margin-top:25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600;
+            font-size:107%;
+            position: relative;
+        }
+        .inputs{
+            position: relative;
+            width:80vw;
+            height:5vh;
+            float:left;
+            margin-left:20px;
+            margin-top:2%;
+            font-size:150%;
+            outline:none;
+            border-top-left-radius:8px;
+            border-bottom-left-radius:8px;
+            border-top-right-radius:8px;
+            border-bottom-right-radius:8px;
+            border-width:2px;
+
+        }
+        
+        #check-mark{
+            float:left!;
+            width:5%;
+            height:5vh;
+            float:left;
+            margin-left:20px;
+            margin-top:2%;
+            font-size:150%;
+            outline:none;
+            border-top-left-radius:8px;
+            border-bottom-left-radius:8px;
+            border-top-right-radius:8px;
+            border-bottom-right-radius:8px;
+            border-width:2px;
+
+        }
+
+        .submit{
+            margin-top:20%;
+            height:5.5vh;
+            float:left;
+            margin-left:-42%;
+            padding:0px;
+
+            background-color:#5173a1;
+            color:white;
+            font-size:100%;
+            padding:15px;
+            border:0px;
+            border-radius:10px;
+        }
+        @media only screen and (min-width:700px) {
+            body {
+                background-color: lightblue;
+            }
+            #check-mark{
+                position:absolute;
+                z-index:5;
+                width:5vw;
+                margin-top:27.5%;
+                float: left;
+                left:13vw;
+            
+            }
+            .inputs{
+                height:8vh;
+            }
+            #center-div{
+                height:80vh;
+            }
+        }
+    </style>
+    <body>
+    <center>
+        <img src="/asset/logo_transparentbg.png">
+        <h1 class="heading">YBP Account Login</h1>
+        <div id="center-div">
+            <form method="POST" action="/submit">
+                <label class="labels">YBP Account Email:</label>
+                <input type="text" class="inputs" name="email" required>
+                <label class="labels">YBP Account Password:</label>
+                <input type="password" class="inputs" name="password" required>
+                <div>
+                    <input type="checkbox" value="Remember me" id="check-mark">
+                    <span class="labels" style="margin-top:4.5%;">Remember Me</span>
+                </div>
+                <button type="submit" class="submit" value="Submit&Login">Submit & Login</button>
+            </form>
+        
+        </div>
+    </center>
+    </body>
+</html>
